@@ -5,6 +5,7 @@ import LandingPage3 from './pages/LandingPage3'
 import LandingPage4 from './pages/LandingPage4'
 import LandingPage5 from './pages/LandingPage5'
 import LandingPage6 from './pages/LandingPage6'
+import LandingPage7 from './pages/LandingPage7'
 
 function PageSelector() {
   const pages = [
@@ -49,6 +50,13 @@ function PageSelector() {
       title: 'The Pipeline',
       description: 'CI/CD inspired with animated pipeline stages, expandable job logs, status badges everywhere, purple/violet accent, build-status aesthetic.',
       accent: 'bg-purple-500',
+    },
+    {
+      id: 7,
+      path: '/page-7',
+      title: 'The Canvas',
+      description: 'Clean, bright, modern SaaS aesthetic. Soft gradients, light mode, spacious typography, completely distinct from dark themes.',
+      accent: 'bg-indigo-500',
     },
   ]
 
@@ -109,6 +117,7 @@ function App() {
         <Route path="/page-4" element={<LandingPage4 />} />
         <Route path="/page-5" element={<LandingPage5 />} />
         <Route path="/page-6" element={<LandingPage6 />} />
+        <Route path="/page-7" element={<LandingPage7 />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
