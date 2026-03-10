@@ -6,6 +6,7 @@ import LandingPage4 from './pages/LandingPage4'
 import LandingPage5 from './pages/LandingPage5'
 import LandingPage6 from './pages/LandingPage6'
 import LandingPage7 from './pages/LandingPage7'
+import LandingPage8 from './pages/LandingPage8'
 
 function PageSelector() {
   const pages = [
@@ -58,6 +59,13 @@ function PageSelector() {
       description: 'Clean, bright, modern SaaS aesthetic. Soft gradients, light mode, spacious typography, completely distinct from dark themes.',
       accent: 'bg-indigo-500',
     },
+    {
+      id: 8,
+      path: '/page-8',
+      title: 'The Pricing',
+      description: 'Dedicated pricing page template with plans, toggles, feature comparison, and FAQ sections. High-conversion focus.',
+      accent: 'bg-rose-500',
+    },
   ]
 
   return (
@@ -68,7 +76,7 @@ function PageSelector() {
             CodePost Landing Pages
           </h1>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            6 developer-focused landing page designs. Same product, same dark/terminal DNA — each with a unique visual direction.
+            7 developer-focused landing page designs. Same product, same dark/terminal DNA — each with a unique visual direction.
           </p>
         </div>
 
@@ -118,6 +126,7 @@ function App() {
         <Route path="/page-5" element={<LandingPage5 />} />
         <Route path="/page-6" element={<LandingPage6 />} />
         <Route path="/page-7" element={<LandingPage7 />} />
+        <Route path="/page-8" element={<LandingPage8 />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
